@@ -1,0 +1,1075 @@
+{
+  "schema_version": 1,
+  "scope": "All43 originally missing feature001 targets; source/reference status is not tested-code status.",
+  "baseline_catalog_sha256": "c2e779887f7223aff8836c15e40e9900beb6690a97703746ce43eca34c1cd360",
+  "source_pins": {
+    "kactl": "fb67e471a878eb06ad9ed036c38c76b6c913847c",
+    "acl": "864245a00b00dd008d1abfdc239618fdb7d139da",
+    "cp-algorithms": "c18a62d01ab9fd816a8cdeedb40cf92e47a60bb1",
+    "cp-algorithms-aux": "2da939345631f2ed51d546b3245e03394352b9c2",
+    "nyaan": "b3981adc80a800b2584980b01821324ea6c77183",
+    "luzhiled": "dca071d33d8dbfd001e450a109c55eb6c38c2ee8",
+    "suisen": "c49e847ae29ed11510ad9cd7713f5ec77ddf20b1",
+    "benq": "292c614b7b83c355b188234966b3b336bc009f16",
+    "ecnerwala": "6d94fa04f139e11e71352fecbdc8de241fa038c3"
+  },
+  "counts": {
+    "new-integration": 7,
+    "original-reference": 23,
+    "pinned-reference": 8,
+    "residual-gap": 5
+  },
+  "entries": [
+    {
+      "entry_id": "amortized-analysis",
+      "name": "amortized analysis",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for amortized analysis has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "pinned-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "amortized analysis",
+        "references": [
+          {
+            "source": "cp-algorithms",
+            "path": "src/data_structures/stack_queue_modification.md",
+            "kind": "article",
+            "license": "CC-BY-SA-4.0"
+          }
+        ],
+        "local_references": []
+      },
+      "rationale": "Minimum-queue and two-stack-queue explanations count each element's pushes/transfers/pops, giving a concrete aggregate amortized-analysis example; not an arbitrary amortized-analysis solver.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "backtracking",
+      "name": "Backtracking",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for Backtracking has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "original-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "Backtracking",
+        "references": [],
+        "local_references": [
+          {
+            "path": "docs/techniques/search-and-state.md",
+            "fragment": "backtracking",
+            "attribution": "Toolkit contributors",
+            "provenance": "repository-original",
+            "kind": "article"
+          }
+        ]
+      },
+      "rationale": "Original educational worked reference with explicit assumptions, examples and pitfalls; not a generic tested solver or an upstream acquisition.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "binary-heap",
+      "name": "binary heap",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for binary heap has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "pinned-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "binary heap",
+        "references": [
+          {
+            "source": "cp-algorithms",
+            "path": "src/graph/dijkstra_sparse.md",
+            "kind": "article",
+            "license": "CC-BY-SA-4.0"
+          }
+        ],
+        "local_references": []
+      },
+      "rationale": "Heap-backed priority_queue operations and stale-entry handling are explained in the sparse Dijkstra article; this remains a contextual educational reference, not a new heap integration.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "brute-force-stress-methodology",
+      "name": "brute-force stress methodology",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for brute-force stress methodology has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "original-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "brute-force stress methodology",
+        "references": [],
+        "local_references": [
+          {
+            "path": "docs/techniques/reasoning-and-workflow.md",
+            "fragment": "brute-force-stress-methodology",
+            "attribution": "Toolkit contributors",
+            "provenance": "repository-original",
+            "kind": "article"
+          }
+        ]
+      },
+      "rationale": "Original educational worked reference with explicit assumptions, examples and pitfalls; not a generic tested solver or an upstream acquisition.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "cdq-divide-and-conquer",
+      "name": "CDQ divide-and-conquer",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for CDQ divide-and-conquer has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "residual-gap",
+      "final": {
+        "implementation": "missing",
+        "name": "CDQ divide-and-conquer",
+        "references": [],
+        "local_references": []
+      },
+      "rationale": "No concrete CDQ cross-half contribution reference was verified in the pinned shelf. Segment-tree-over-time rollback and monotone partition DP use different invariants and are not silently relabeled as CDQ.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "comparator-strict-weak-order-rules",
+      "name": "Comparator/strict-weak-order rules",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for Comparator/strict-weak-order rules has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "original-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "Comparator/strict-weak-order rules",
+        "references": [],
+        "local_references": [
+          {
+            "path": "docs/techniques/ordering-and-containers.md",
+            "fragment": "strict-weak-ordering",
+            "attribution": "Toolkit contributors",
+            "provenance": "repository-original",
+            "kind": "article"
+          }
+        ]
+      },
+      "rationale": "Original educational worked reference with explicit assumptions, examples and pitfalls; not a generic tested solver or an upstream acquisition.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "constructive-proofs",
+      "name": "constructive proofs",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for constructive proofs has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "original-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "constructive proofs",
+        "references": [],
+        "local_references": [
+          {
+            "path": "docs/techniques/reasoning-and-workflow.md",
+            "fragment": "constructive-proofs",
+            "attribution": "Toolkit contributors",
+            "provenance": "repository-original",
+            "kind": "article"
+          }
+        ]
+      },
+      "rationale": "Original educational worked reference with explicit assumptions, examples and pitfalls; not a generic tested solver or an upstream acquisition.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "coordinate-transforms",
+      "name": "coordinate transforms",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for coordinate transforms has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "original-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "coordinate transforms",
+        "references": [],
+        "local_references": [
+          {
+            "path": "docs/techniques/transformations.md",
+            "fragment": "coordinate-transforms",
+            "attribution": "Toolkit contributors",
+            "provenance": "repository-original",
+            "kind": "article"
+          }
+        ]
+      },
+      "rationale": "Original educational worked reference with explicit assumptions, examples and pitfalls; not a generic tested solver or an upstream acquisition.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "dag-shortest-paths",
+      "name": "DAG shortest paths",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for DAG shortest paths has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "new-integration",
+      "final": {
+        "implementation": "implemented",
+        "name": "Signed DAG shortest paths with cycle rejection",
+        "references": [],
+        "local_references": []
+      },
+      "rationale": "Included in the exact36 additional integrations; its own example, full scoped contract and independent oracle suite determine current readiness.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "deque",
+      "name": "Deque",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for Deque has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "original-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "Deque",
+        "references": [],
+        "local_references": [
+          {
+            "path": "docs/techniques/ordering-and-containers.md",
+            "fragment": "deque",
+            "attribution": "Toolkit contributors",
+            "provenance": "repository-original",
+            "kind": "article"
+          }
+        ]
+      },
+      "rationale": "Original educational worked reference with explicit assumptions, examples and pitfalls; not a generic tested solver or an upstream acquisition.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "difference-transformations",
+      "name": "Difference transformations",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for Difference transformations has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "original-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "Difference transformations",
+        "references": [],
+        "local_references": [
+          {
+            "path": "docs/techniques/transformations.md",
+            "fragment": "difference-transformations",
+            "attribution": "Toolkit contributors",
+            "provenance": "repository-original",
+            "kind": "article"
+          }
+        ]
+      },
+      "rationale": "Original educational worked reference with explicit assumptions, examples and pitfalls; not a generic tested solver or an upstream acquisition.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "digit-dp",
+      "name": "digit DP",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for digit DP has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "new-integration",
+      "final": {
+        "implementation": "implemented",
+        "name": "Digit-state DP: no equal neighbors and digit-sum residue",
+        "references": [],
+        "local_references": []
+      },
+      "rationale": "Included in the exact36 additional integrations; its own example, full scoped contract and independent oracle suite determine current readiness.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "divide-and-conquer-on-time",
+      "name": "divide-and-conquer on time",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for divide-and-conquer on time has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "pinned-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "divide-and-conquer on time",
+        "references": [
+          {
+            "source": "cp-algorithms",
+            "path": "src/data_structures/deleting_in_log_n.md",
+            "kind": "article",
+            "license": "CC-BY-SA-4.0"
+          }
+        ],
+        "local_references": []
+      },
+      "rationale": "The article explicitly decomposes active intervals on a time segment tree, applies/undoes updates along DFS, and warns that rollback invalidates amortized bounds.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "greedy-exchange-arguments",
+      "name": "Greedy exchange arguments",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for Greedy exchange arguments has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "original-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "Greedy exchange arguments",
+        "references": [],
+        "local_references": [
+          {
+            "path": "docs/techniques/reasoning-and-workflow.md",
+            "fragment": "greedy-exchange-arguments",
+            "attribution": "Toolkit contributors",
+            "provenance": "repository-original",
+            "kind": "article"
+          }
+        ]
+      },
+      "rationale": "Original educational worked reference with explicit assumptions, examples and pitfalls; not a generic tested solver or an upstream acquisition.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "interval-dp",
+      "name": "interval DP",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for interval DP has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "new-integration",
+      "final": {
+        "implementation": "implemented",
+        "name": "Worked interval DP: optimal adjacent merges",
+        "references": [],
+        "local_references": []
+      },
+      "rationale": "Included in the exact36 additional integrations; its own example, full scoped contract and independent oracle suite determine current readiness.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "invariants",
+      "name": "invariants",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for invariants has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "original-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "invariants",
+        "references": [],
+        "local_references": [
+          {
+            "path": "docs/techniques/reasoning-and-workflow.md",
+            "fragment": "invariants",
+            "attribution": "Toolkit contributors",
+            "provenance": "repository-original",
+            "kind": "article"
+          }
+        ]
+      },
+      "rationale": "Original educational worked reference with explicit assumptions, examples and pitfalls; not a generic tested solver or an upstream acquisition.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "johnson-all-pairs",
+      "name": "Johnson all-pairs",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for Johnson all-pairs has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "original-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "Johnson all-pairs",
+        "references": [],
+        "local_references": [
+          {
+            "path": "docs/techniques/johnson-shortest-paths.md",
+            "fragment": "reweighting-and-recovery",
+            "attribution": "Toolkit contributors",
+            "provenance": "repository-original",
+            "kind": "article"
+          }
+        ]
+      },
+      "rationale": "Original educational worked reference with explicit assumptions, examples and pitfalls; not a generic tested solver or an upstream acquisition.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "longest-common-subsequence",
+      "name": "longest common subsequence",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for longest common subsequence has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "new-integration",
+      "final": {
+        "implementation": "implemented",
+        "name": "Byte longest common subsequence with reconstruction",
+        "references": [],
+        "local_references": []
+      },
+      "rationale": "Included in the exact36 additional integrations; its own example, full scoped contract and independent oracle suite determine current readiness.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "meet-in-the-middle",
+      "name": "meet-in-the-middle",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for meet-in-the-middle has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "original-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "meet-in-the-middle",
+        "references": [],
+        "local_references": [
+          {
+            "path": "docs/techniques/search-and-state.md",
+            "fragment": "meet-in-the-middle",
+            "attribution": "Toolkit contributors",
+            "provenance": "repository-original",
+            "kind": "article"
+          }
+        ]
+      },
+      "rationale": "Original educational worked reference with explicit assumptions, examples and pitfalls; not a generic tested solver or an upstream acquisition.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "meet-in-the-middle-subset-optimization",
+      "name": "meet-in-the-middle subset optimization",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for meet-in-the-middle subset optimization has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "new-integration",
+      "final": {
+        "implementation": "implemented",
+        "name": "Exact signed subset-sum optimization by meet in the middle",
+        "references": [],
+        "local_references": []
+      },
+      "rationale": "Included in the exact36 additional integrations; its own example, full scoped contract and independent oracle suite determine current readiness.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "min-cost-circulation",
+      "name": "min-cost circulation",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for min-cost circulation has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "pinned-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "min-cost circulation",
+        "references": [
+          {
+            "source": "benq",
+            "path": "Implementations/content/graphs (12)/Flows (12.3)/CapacityScaling.h",
+            "kind": "code",
+            "license": "NOASSERTION"
+          }
+        ],
+        "local_references": []
+      },
+      "rationale": "A real minimum-cost circulation with supplies/demands exists at the locked path. It says Source: Own, but has no file-level license marker accepted by the repository's selective-per-file copying policy. Retain an attributable copy-blocked reference, not a missing-source claim or tested integration; macro prerequisites and numeric products are not integrated.",
+      "reviewed_paths": [
+        {
+          "source": "benq",
+          "revision": "292c614b7b83c355b188234966b3b336bc009f16",
+          "path": "Implementations/content/graphs (12)/Flows (12.3)/CapacityScaling.h"
+        },
+        {
+          "source": "benq",
+          "revision": "292c614b7b83c355b188234966b3b336bc009f16",
+          "path": "Implementations/content/graphs (12)/Flows (12.3)/NetworkSimplex.h"
+        },
+        {
+          "source": "benq",
+          "revision": "292c614b7b83c355b188234966b3b336bc009f16",
+          "path": "Implementations/content/graphs (12)/Flows (12.3)/MCMF.h"
+        }
+      ]
+    },
+    {
+      "entry_id": "minimum-cycle-basis",
+      "name": "minimum cycle basis",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for minimum cycle basis has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "residual-gap",
+      "final": {
+        "implementation": "missing",
+        "name": "minimum cycle basis",
+        "references": [],
+        "local_references": []
+      },
+      "rationale": "No concrete minimum-weight cycle-basis reference was verified in the pinned shelf. Finding one cycle or building an arbitrary XOR-independent cycle set does not establish minimum total weight. Retained beyond the 36 integrations.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "mo-with-updates",
+      "name": "Mo with updates",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for Mo with updates has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "residual-gap",
+      "final": {
+        "implementation": "missing",
+        "name": "Mo with updates",
+        "references": [],
+        "local_references": []
+      },
+      "rationale": "Inspected static Nyaan/Benq/KACTL Mo and Luzhiled rollback-Mo sources; none of these implements the three-coordinate query-time/update-time traversal with reversible point modifications. Retained beyond this bounded expansion, not mislabeled from ordinary Mo.",
+      "reviewed_paths": [
+        {
+          "source": "kactl",
+          "revision": "fb67e471a878eb06ad9ed036c38c76b6c913847c",
+          "path": "content/data-structures/MoQueries.h"
+        },
+        {
+          "source": "nyaan",
+          "revision": "b3981adc80a800b2584980b01821324ea6c77183",
+          "path": "misc/mo.hpp"
+        },
+        {
+          "source": "luzhiled",
+          "revision": "dca071d33d8dbfd001e450a109c55eb6c38c2ee8",
+          "path": "other/mo-rollback.hpp"
+        },
+        {
+          "source": "benq",
+          "revision": "292c614b7b83c355b188234966b3b336bc009f16",
+          "path": "Implementations/content/data-structures/1D Range Queries (9.2)/Mo (15.1).h"
+        }
+      ]
+    },
+    {
+      "entry_id": "multidimensional-dominance",
+      "name": "Multidimensional dominance",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for Multidimensional dominance has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "residual-gap",
+      "final": {
+        "implementation": "missing",
+        "name": "Multidimensional dominance",
+        "references": [],
+        "local_references": []
+      },
+      "rationale": "The pinned shelf has orthogonal range data structures, but no worked dominance-counting reference with dimension, strictness, duplicate-group and coordinate semantics was verified in this audit. A bare 2D container is not credited as a general dominance technique.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "numerical-stability-epsilon-comparisons",
+      "name": "numerical stability/epsilon comparisons",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for numerical stability/epsilon comparisons has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "original-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "numerical stability/epsilon comparisons",
+        "references": [],
+        "local_references": [
+          {
+            "path": "docs/techniques/numerics-and-randomness.md",
+            "fragment": "numerical-stability-and-epsilon-comparisons",
+            "attribution": "Toolkit contributors",
+            "provenance": "repository-original",
+            "kind": "article"
+          }
+        ]
+      },
+      "rationale": "Original educational worked reference with explicit assumptions, examples and pitfalls; not a generic tested solver or an upstream acquisition.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "offline-versus-online-processing",
+      "name": "offline versus online processing",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for offline versus online processing has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "original-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "offline versus online processing",
+        "references": [],
+        "local_references": [
+          {
+            "path": "docs/techniques/reasoning-and-workflow.md",
+            "fragment": "offline-versus-online-processing",
+            "attribution": "Toolkit contributors",
+            "provenance": "repository-original",
+            "kind": "article"
+          }
+        ]
+      },
+      "rationale": "Original educational worked reference with explicit assumptions, examples and pitfalls; not a generic tested solver or an upstream acquisition.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "ordered-map",
+      "name": "Ordered map",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for Ordered map has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "original-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "Ordered map",
+        "references": [],
+        "local_references": [
+          {
+            "path": "docs/techniques/ordering-and-containers.md",
+            "fragment": "ordered-map",
+            "attribution": "Toolkit contributors",
+            "provenance": "repository-original",
+            "kind": "article"
+          }
+        ]
+      },
+      "rationale": "Original educational worked reference with explicit assumptions, examples and pitfalls; not a generic tested solver or an upstream acquisition.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "ordered-set",
+      "name": "Ordered set",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for Ordered set has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "original-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "Ordered set",
+        "references": [],
+        "local_references": [
+          {
+            "path": "docs/techniques/ordering-and-containers.md",
+            "fragment": "ordered-set",
+            "attribution": "Toolkit contributors",
+            "provenance": "repository-original",
+            "kind": "article"
+          }
+        ]
+      },
+      "rationale": "Original educational worked reference with explicit assumptions, examples and pitfalls; not a generic tested solver or an upstream acquisition.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "parallel-binary-search",
+      "name": "Parallel binary search",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for Parallel binary search has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "new-integration",
+      "final": {
+        "implementation": "implemented",
+        "name": "Parallel binary search",
+        "references": [],
+        "local_references": []
+      },
+      "rationale": "Included in the exact36 additional integrations; its own example, full scoped contract and independent oracle suite determine current readiness.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "prefix-transformations",
+      "name": "Prefix transformations",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for Prefix transformations has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "pinned-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "Prefix transformations",
+        "references": [
+          {
+            "source": "luzhiled",
+            "path": "docs/cumulative-sum.md",
+            "kind": "article",
+            "license": "Unlicense"
+          }
+        ],
+        "local_references": []
+      },
+      "rationale": "Pinned cumulative-sum documentation specifies build/fold, half-open ranges, one-time construction and O(1) range sums; reference-only, not another counted prefix-sum wrapper.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "queue",
+      "name": "Queue",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for Queue has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "original-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "Queue",
+        "references": [],
+        "local_references": [
+          {
+            "path": "docs/techniques/ordering-and-containers.md",
+            "fragment": "queue",
+            "attribution": "Toolkit contributors",
+            "provenance": "repository-original",
+            "kind": "article"
+          }
+        ]
+      },
+      "rationale": "Original educational worked reference with explicit assumptions, examples and pitfalls; not a generic tested solver or an upstream acquisition.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "randomized-incremental-geometry",
+      "name": "Randomized incremental geometry",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for Randomized incremental geometry has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "pinned-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "Randomized incremental geometry",
+        "references": [
+          {
+            "source": "cp-algorithms",
+            "path": "src/geometry/enclosing-circle.md",
+            "kind": "article",
+            "license": "CC-BY-SA-4.0"
+          }
+        ],
+        "local_references": []
+      },
+      "rationale": "Welzl's randomized incremental circle construction and backward expected-time analysis directly address the target. The article uses newer-standard pseudocode and is not promoted to C++17 tested code.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "randomized-polynomial-identity-testing",
+      "name": "randomized polynomial identity testing",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for randomized polynomial identity testing has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "residual-gap",
+      "final": {
+        "implementation": "missing",
+        "name": "randomized polynomial identity testing",
+        "references": [],
+        "local_references": []
+      },
+      "rationale": "No concrete polynomial-identity-testing reference with field, degree and sampling assumptions was verified in the pinned shelf. String rolling hashes and generic polynomial operations are not a substitute for a Schwartz-Zippel identity-testing contract.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "reconstruction",
+      "name": "reconstruction",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for reconstruction has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "pinned-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "reconstruction",
+        "references": [
+          {
+            "source": "cp-algorithms",
+            "path": "src/dynamic_programming/longest_increasing_subsequence.md",
+            "kind": "article",
+            "license": "CC-BY-SA-4.0"
+          }
+        ],
+        "local_references": []
+      },
+      "rationale": "The actual article (not its old redirect page) explains predecessor storage and reconstruction with LIS. This is a concrete worked reconstruction reference, not a universal DP traceback implementation.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "recursion",
+      "name": "Recursion",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for Recursion has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "original-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "Recursion",
+        "references": [],
+        "local_references": [
+          {
+            "path": "docs/techniques/search-and-state.md",
+            "fragment": "recursion",
+            "attribution": "Toolkit contributors",
+            "provenance": "repository-original",
+            "kind": "article"
+          }
+        ]
+      },
+      "rationale": "Original educational worked reference with explicit assumptions, examples and pitfalls; not a generic tested solver or an upstream acquisition.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "reductions",
+      "name": "reductions",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for reductions has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "pinned-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "reductions",
+        "references": [
+          {
+            "source": "cp-algorithms",
+            "path": "src/graph/flow_with_demands.md",
+            "kind": "article",
+            "license": "CC-BY-SA-4.0"
+          }
+        ],
+        "local_references": []
+      },
+      "rationale": "The lower-bound-flow article constructs a saturation/max-flow reduction and explains feasibility correspondence and recovery. This is a worked reduction reference, not a generic solver.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "shuffle-invariants",
+      "name": "shuffle invariants",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for shuffle invariants has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "original-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "shuffle invariants",
+        "references": [],
+        "local_references": [
+          {
+            "path": "docs/techniques/numerics-and-randomness.md",
+            "fragment": "shuffle-invariants",
+            "attribution": "Toolkit contributors",
+            "provenance": "repository-original",
+            "kind": "article"
+          }
+        ]
+      },
+      "rationale": "Original educational worked reference with explicit assumptions, examples and pitfalls; not a generic tested solver or an upstream acquisition.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "stable-sorting",
+      "name": "stable sorting",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for stable sorting has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "original-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "stable sorting",
+        "references": [],
+        "local_references": [
+          {
+            "path": "docs/techniques/ordering-and-containers.md",
+            "fragment": "stable-sorting",
+            "attribution": "Toolkit contributors",
+            "provenance": "repository-original",
+            "kind": "article"
+          }
+        ]
+      },
+      "rationale": "Original educational worked reference with explicit assumptions, examples and pitfalls; not a generic tested solver or an upstream acquisition.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "stack",
+      "name": "Stack",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for Stack has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "original-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "Stack",
+        "references": [],
+        "local_references": [
+          {
+            "path": "docs/techniques/ordering-and-containers.md",
+            "fragment": "stack",
+            "attribution": "Toolkit contributors",
+            "provenance": "repository-original",
+            "kind": "article"
+          }
+        ]
+      },
+      "rationale": "Original educational worked reference with explicit assumptions, examples and pitfalls; not a generic tested solver or an upstream acquisition.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "subset-bitmask-dp",
+      "name": "subset/bitmask DP",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for subset/bitmask DP has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "original-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "subset/bitmask DP",
+        "references": [],
+        "local_references": [
+          {
+            "path": "docs/techniques/search-and-state.md",
+            "fragment": "subset-bitmask-dp",
+            "attribution": "Toolkit contributors",
+            "provenance": "repository-original",
+            "kind": "article"
+          }
+        ]
+      },
+      "rationale": "Original educational worked reference with explicit assumptions, examples and pitfalls; not a generic tested solver or an upstream acquisition.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "subtraction-games",
+      "name": "Subtraction games",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for Subtraction games has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "new-integration",
+      "final": {
+        "implementation": "implemented",
+        "name": "Finite normal-play subtraction-game Grundy values and moves",
+        "references": [],
+        "local_references": []
+      },
+      "rationale": "Included in the exact36 additional integrations; its own example, full scoped contract and independent oracle suite determine current readiness.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "sweep-line-events",
+      "name": "sweep-line events",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for sweep-line events has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "original-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "sweep-line events",
+        "references": [],
+        "local_references": [
+          {
+            "path": "docs/techniques/search-and-state.md",
+            "fragment": "sweep-line-events",
+            "attribution": "Toolkit contributors",
+            "provenance": "repository-original",
+            "kind": "article"
+          }
+        ]
+      },
+      "rationale": "Original educational worked reference with explicit assumptions, examples and pitfalls; not a generic tested solver or an upstream acquisition.",
+      "reviewed_paths": []
+    },
+    {
+      "entry_id": "two-pointers",
+      "name": "two pointers",
+      "original": {
+        "implementation": "missing",
+        "reason": "No concrete pinned reference for two pointers has been verified in this inventory; this is an explicit study gap, not an implementation.",
+        "references": []
+      },
+      "disposition": "original-reference",
+      "final": {
+        "implementation": "reference-only",
+        "name": "two pointers",
+        "references": [],
+        "local_references": [
+          {
+            "path": "docs/techniques/search-and-state.md",
+            "fragment": "two-pointers",
+            "attribution": "Toolkit contributors",
+            "provenance": "repository-original",
+            "kind": "article"
+          }
+        ]
+      },
+      "rationale": "Original educational worked reference with explicit assumptions, examples and pitfalls; not a generic tested solver or an upstream acquisition.",
+      "reviewed_paths": []
+    }
+  ]
+}

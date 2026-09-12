@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "name": "Compact ICPC notebook",
+  "description": "Exact 12-entry approved selection; current tested evidence required.",
+  "entries": [
+    "dsu",
+    "fenwick",
+    "segtree",
+    "dijkstra",
+    "lca",
+    "max-flow",
+    "bipartite-matching",
+    "prefix-function",
+    "crt",
+    "modular-convolution",
+    "convex-hull",
+    "gaussian-elimination"
+  ],
+  "include_study_references": false,
+  "print_options": {
+    "page_size": "browser-default",
+    "notes": "No assumed contest page limit; verify rules and preview printing."
+  }
+}
