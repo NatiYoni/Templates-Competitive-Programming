@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "kactl", "name": "KTH Algorithm Competition Template Library",
+      "repository_url": "https://github.com/kth-competitive-programming/kactl",
+      "revision": "fb67e471a878eb06ad9ed036c38c76b6c913847c", "acquire": true,
+      "kind": "reusable-library", "inclusion_reason": "Requested ICPC notebook; selectively integrate explicitly licensed headers.",
+      "attribution": {"status": "verified", "author": "KTH KACTL contributors", "evidence": ["https://github.com/kth-competitive-programming/kactl/blob/fb67e471a878eb06ad9ed036c38c76b6c913847c/README.md"], "observed": "2026-09-12"},
+      "availability": {"status": "public", "observed": "2026-09-12"},
+      "license": {"declared": "NOASSERTION", "evidence": ["README.md"], "exceptions": ["Mixed per-file licensing; require explicit permission for each copied header and dependency."], "copying": "selective-per-file"},
+      "portability_notes": ["Macros/aliases and globals require a documented prelude.", "Individual files may require extensions or special allocation assumptions."],
+      "submodules": [], "managed_dependencies": []
+    },
+    {
+      "id": "acl", "name": "AtCoder Library",
+      "repository_url": "https://github.com/atcoder/ac-library",
+      "revision": "864245a00b00dd008d1abfdc239618fdb7d139da", "acquire": true,
+      "kind": "reusable-library", "inclusion_reason": "Requested official library; primary curated core.",
+      "attribution": {"status": "verified", "author": "AtCoder", "evidence": ["https://github.com/atcoder/ac-library/blob/864245a00b00dd008d1abfdc239618fdb7d139da/README.md"], "observed": "2026-09-12"},
+      "availability": {"status": "public", "observed": "2026-09-12"},
+      "license": {"declared": "CC0-1.0", "evidence": ["LICENSE", "README.md"], "exceptions": ["Documentation libraries have separate notices in document_en/lib/LICENSE.md."], "copying": "preserve-exceptions"},
+      "portability_notes": ["Core examples target GNU C++17.", "Per-operation numeric and valid-input preconditions apply."],
+      "submodules": [
+        {"path": "test/benchmark/benchmark", "revision": "d572f4777349d43653b21d6c2fc63020ab326db2", "policy": "not-initialized", "evidence": ".gitmodules"},
+        {"path": "test/unittest/googletest", "revision": "cead3d57c93ff8c4e5c1bbae57a5c0b0b0f6e168", "policy": "not-initialized", "evidence": ".gitmodules"}
+      ], "managed_dependencies": []
+    },
+    {
+      "id": "cp-algorithms", "name": "CP-Algorithms articles",
+      "repository_url": "https://github.com/cp-algorithms/cp-algorithms",
+      "revision": "c18a62d01ab9fd816a8cdeedb40cf92e47a60bb1", "acquire": true,
+      "kind": "educational-articles", "inclusion_reason": "Requested educational reference, not a drop-in implementation library.",
+      "attribution": {"status": "verified", "author": "CP-Algorithms contributors", "evidence": ["https://github.com/cp-algorithms/cp-algorithms/blob/c18a62d01ab9fd816a8cdeedb40cf92e47a60bb1/README.md"], "observed": "2026-09-12"},
+      "availability": {"status": "public", "observed": "2026-09-12"},
+      "license": {"declared": "CC-BY-SA-4.0", "evidence": ["LICENSE"], "exceptions": ["Retain attribution and share-alike obligations for copied/adapted content."], "copying": "attribution-share-alike"},
+      "portability_notes": ["Article Markdown is available offline; full MkDocs site/plugin reconstruction is not included."],
+      "submodules": [{"path": "plugins/mkdocs-git-committers-plugin-2", "revision": "35e2f65a913888006067faf4aac126ebcdf8e509", "policy": "not-initialized", "evidence": ".gitmodules"}], "managed_dependencies": []
+    },
+    {
+      "id": "cp-algorithms-aux", "name": "CP-Algorithms auxiliary implementation library",
+      "repository_url": "https://github.com/cp-algorithms/cp-algorithms-aux",
+      "revision": "2da939345631f2ed51d546b3245e03394352b9c2", "acquire": true,
+      "kind": "reusable-library", "inclusion_reason": "Verified associated implementation library, kept distinct from educational articles.",
+      "attribution": {"status": "verified", "author": "CP-Algorithms contributors", "evidence": ["https://github.com/cp-algorithms/cp-algorithms/blob/c18a62d01ab9fd816a8cdeedb40cf92e47a60bb1/README.md", "https://github.com/cp-algorithms/cp-algorithms-aux"], "observed": "2026-09-12"},
+      "availability": {"status": "public", "observed": "2026-09-12"},
+      "license": {"declared": "CC-BY-SA-4.0", "evidence": ["LICENSE"], "exceptions": ["Preserve attribution/share-alike and any individual exceptions."], "copying": "attribution-share-alike"},
+      "portability_notes": ["Pinned verification configuration uses C++23; reference-only for the default C++17 core."],
+      "submodules": [{"path": "blazingio", "revision": "f1ec3035c86d900e589c6c52fdd6a114eed9d185", "policy": "not-initialized", "evidence": ".gitmodules"}], "managed_dependencies": []
+    },
+    {
+      "id": "nyaan", "name": "Nyaan's Library",
+      "repository_url": "https://github.com/NyaanNyaan/library",
+      "revision": "b3981adc80a800b2584980b01821324ea6c77183", "acquire": true,
+      "kind": "reusable-library", "inclusion_reason": "Requested broad advanced-algorithm reference.",
+      "attribution": {"status": "verified", "author": "Nyaan", "evidence": ["https://github.com/NyaanNyaan/library/blob/b3981adc80a800b2584980b01821324ea6c77183/README.md"], "observed": "2026-09-12"},
+      "availability": {"status": "public", "observed": "2026-09-12"},
+      "license": {"declared": "CC0-1.0", "evidence": ["LICENSE"], "exceptions": ["Review file-specific notices before adaptation."], "copying": "preserve-exceptions"},
+      "portability_notes": ["README targets GCC/C++17 but explicitly says some files require AVX2; no automatic AVX2 flags."],
+      "submodules": [], "managed_dependencies": []
+    },
+    {
+      "id": "luzhiled", "name": "Luzhiled's library",
+      "repository_url": "https://github.com/ei1333/library",
+      "revision": "dca071d33d8dbfd001e450a109c55eb6c38c2ee8", "acquire": true,
+      "kind": "reusable-library", "inclusion_reason": "Requested advanced reusable-library reference.",
+      "attribution": {"status": "verified", "author": "Luzhiled (ei1333)", "evidence": ["https://github.com/ei1333/library"], "observed": "2026-09-12"},
+      "availability": {"status": "public", "observed": "2026-09-12"},
+      "license": {"declared": "Unlicense", "evidence": ["LICENSE"], "exceptions": ["Review file-specific notices and dependencies before adaptation."], "copying": "preserve-exceptions"},
+      "portability_notes": ["Individual modules/dependencies must be checked; acquisition is not local validation."],
+      "submodules": [], "managed_dependencies": []
+    },
+    {
+      "id": "suisen", "name": "Suisen C++ library",
+      "repository_url": "https://github.com/suisen-cp/cp-library-cpp",
+      "revision": "c49e847ae29ed11510ad9cd7713f5ec77ddf20b1", "acquire": true,
+      "kind": "reusable-library", "inclusion_reason": "Requested broad reusable-library reference.",
+      "attribution": {"status": "verified", "author": "suisen-cp", "evidence": ["https://github.com/suisen-cp/cp-library-cpp"], "observed": "2026-09-12"},
+      "availability": {"status": "public", "observed": "2026-09-12"},
+      "license": {"declared": "CC0-1.0", "evidence": ["README.md"], "exceptions": ["CC0 declared in README LICENSE section; no root LICENSE found. Preserve source-specific exceptions."], "copying": "preserve-exceptions"},
+      "portability_notes": ["README identifies ACL dependencies for some headers.", "The uninitialized ACL gitlink differs from the toolkit ACL pin; compatibility is not claimed without per-entry integration tests."],
+      "submodules": [{"path": "ac-library", "revision": "f669803f78c3acc72671ca6e41b4eeb0469364a8", "policy": "not-initialized", "evidence": ".gitmodules"}], "managed_dependencies": ["acl"]
+    },
+    {
+      "id": "benq", "name": "Benjamin Qi's competitive-programming notebook",
+      "repository_url": "https://github.com/bqi343/cp-notebook",
+      "revision": "292c614b7b83c355b188234966b3b336bc009f16", "acquire": true,
+      "kind": "mixed-notebook-archive", "inclusion_reason": "Verified requested competitor notebook; distinguish Implementations/content from contest solutions.",
+      "attribution": {"status": "verified", "author": "Benjamin Qi (Benq)", "evidence": ["https://api.github.com/users/bqi343", "https://codeforces.com/profile/Benq", "https://github.com/bqi343/cp-notebook/blob/292c614b7b83c355b188234966b3b336bc009f16/Implementations/README.md"], "observed": "2026-09-12"},
+      "availability": {"status": "public", "observed": "2026-09-12"},
+      "license": {"declared": "CC0-1.0", "evidence": ["LICENSE", "Implementations/README.md"], "exceptions": ["Notebook README warns of unclear inherited per-file licensing; root CC0 is not blanket clearance."], "copying": "selective-per-file"},
+      "portability_notes": ["GNU headers/macros/builtins; some stale reference paths. Do not run shell-escape PDF builds automatically."],
+      "submodules": [], "managed_dependencies": []
+    },
+    {
+      "id": "ecnerwala", "name": "Andrew He's cp-book",
+      "repository_url": "https://github.com/ecnerwala/cp-book",
+      "revision": "6d94fa04f139e11e71352fecbdc8de241fa038c3", "acquire": true,
+      "kind": "reusable-library", "inclusion_reason": "Verified intended competitor ecnerwala, correcting the supplied spelling encrwala.",
+      "attribution": {"status": "verified", "author": "Andrew He (ecnerwala)", "evidence": ["https://api.github.com/users/ecnerwala", "https://codeforces.com/profile/ecnerwala", "https://github.com/ecnerwala/cp-book/blob/6d94fa04f139e11e71352fecbdc8de241fa038c3/README.md"], "observed": "2026-09-12"},
+      "availability": {"status": "public", "observed": "2026-09-12"},
+      "license": {"declared": "CC0-1.0", "evidence": ["LICENSE", "README.md"], "exceptions": ["Unless otherwise noted in individual files.", "third_party/sais-lite-2.4.1/COPYING has separate MIT-style terms."], "copying": "preserve-exceptions"},
+      "portability_notes": ["Pinned README requires C++23; some code uses GNU PBDS. Kept separate from C++17 core."],
+      "submodules": [], "managed_dependencies": []
+    },
+    {
+      "id": "tourist", "name": "tourist candidate (unverified attribution)",
+      "repository_url": "https://github.com/the-tourist/algo",
+      "revision": "27958d4a249b07f433cba601a4eee4d877f4caf1", "acquire": false,
+      "kind": "reusable-library", "inclusion_reason": "Repository exists but strong official attribution and explicit reuse permission were not verified. Do not substitute or copy.",
+      "attribution": {"status": "unverified", "author": "Not established for this repository", "evidence": ["https://api.github.com/users/the-tourist", "https://codeforces.com/profile/tourist"], "observed": "2026-09-12"},
+      "availability": {"status": "public", "observed": "2026-09-12"},
+      "license": {"declared": "NOASSERTION", "evidence": [], "exceptions": ["No explicit LICENSE/COPYING found; public access does not grant redistribution permission."], "copying": "blocked"},
+      "portability_notes": ["Some observed current snippets use C++20 bit_floor."], "submodules": [], "managed_dependencies": []
+    },
+    {
+      "id": "jiangly", "name": "jiangly study reference",
+      "repository_url": null, "revision": null, "acquire": false,
+      "kind": "external-study-reference", "inclusion_reason": "No officially attributable reusable library verified; no random or training-solution archive cloned.",
+      "attribution": {"status": "unverified", "author": "Lingyu Jiang (Codeforces identity)", "evidence": ["https://codeforces.com/profile/jiangly", "https://codeforces.com/submissions/jiangly"], "observed": "2026-09-12"},
+      "availability": {"status": "unverified", "observed": "2026-09-12"},
+      "license": {"declared": "NOASSERTION", "evidence": [], "exceptions": ["External study links are not permission to copy submissions."], "copying": "blocked"},
+      "portability_notes": ["No toolkit integration claimed."], "submodules": [], "managed_dependencies": []
+    }
+  ]
+}
